@@ -1,0 +1,210 @@
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  background-image: url("../img/join_background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.jumbotron-fluid {
+  padding-bottom: 40px;
+}
+
+.vertical-center {
+  min-height: 85%;
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+}
+
+#info_wrapper {
+  border-right: none;
+  padding: 30px;
+  margin-top: 20px;
+  background: rgba(210,177,114,0.7);
+  text-align: center;
+  height: 440px;
+}
+
+#logo_img {
+  width: 250px;
+  margin: 20px auto 30px auto;
+}
+
+.info_text {
+  margin: auto 10px;
+  font-size: 1.1em;
+  text-align: left;
+}
+
+.info_text a {
+  color: white;
+  text-decoration: underline;
+}
+
+.info_text a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+#form_wrapper {
+  background: #F8F8F8;
+  padding: 0px 30px;
+  text-align: center;
+  box-shadow: -10px 0 20px -6px black;
+  height: 480px;
+  position: relative;
+}
+
+h3 {
+  color: #2d2d2d;
+  margin-top: 140px;
+}
+
+.tick_cross_img {
+  margin-top: 40px;
+  width: 90px;
+  height: auto;
+}
+
+.success_error_page_h3 {
+  margin-top: 30px;
+}
+
+#navigators {
+  margin: auto -30px auto -30px;
+  background: white;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+#back_button {
+  margin: 20px auto 20px 20px;
+  float: left;
+}
+
+#next_button {
+  margin: 20px 20px 20px auto;
+  float: right;
+  background: #2d2d2d;
+  color: white;
+}
+
+#submit_button {
+  margin: 20px 20px 20px auto;
+  float: right;
+  background: #2d2d2d;
+  color: white;
+  padding: 5px 33px;
+  display: none;
+}
+
+.success_error_button {
+  background: #2d2d2d;
+  color: white;
+}
+
+
+
+
+
+@media only screen and (max-width: 991px) {
+
+  #info_wrapper {
+    margin-top: 25px;
+    height: 460px;
+  }
+
+  #logo_img {
+    width: 150px;
+  }
+
+  #form_wrapper {
+    height: 510px;
+  }
+
+}
+
+@media only screen and (max-width: 767px) {
+
+  .jumbotron-fluid {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .vertical-center {
+    min-height: auto;
+    min-height: auto;
+    display: auto;
+    align-items: auto;
+  }
+
+  #logo_img {
+    width: 300px;
+  }
+
+  #form_wrapper {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+    box-shadow: none;
+    height: 350px;
+  }
+
+  h3 {
+    margin-top: 60px;
+  }
+
+  #navigators {
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+  }
+
+  #info_wrapper {
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 18px;
+    border-top-left-radius: 18px;
+    background: none;
+    background-image: url("../img/form_coffee_mobile.jpg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+  }
+
+  .tick_cross_img {
+    margin-top: 0px;
+    width: 70px;
+  }
+
+  button {
+    padding: 5px 20px;
+  }
+
+}
+
+@media only screen and (max-width: 500px) {
+
+  #logo_img {
+    width: 220px;
+  }
+
+  input[type=text] {
+    width: 220px;
+  }
+
+  select {
+    width: 220px;
+  }
+
+  textarea {
+    width: 220px;
+  }
+
+}

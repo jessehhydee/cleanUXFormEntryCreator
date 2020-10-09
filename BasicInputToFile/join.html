@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+
+
+
+
+
+<html lang="en" dir="ltr">
+
+
+
+
+
+  <head>
+
+
+    <title>Coffee Stamp</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" href="https://www.coffeestamp.co.nz/website/apple-touch-icon.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="global.css">
+    <link rel="stylesheet" type="text/css" href="join.css">
+
+    <!-- jQuery Popper Bootstrap javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+
+
+  </head>
+
+
+
+
+
+
+
+
+
+  <body>
+
+
+
+    <nav data-load="../menu/menu.html"></nav>
+
+
+
+    <div class="jumbotron-fluid vertical-center">
+
+      <div class="container">
+
+        <div id="body_row" class="row">
+
+          <div id="info_wrapper" class="col-md-4">
+
+            <!-- ******************************* INPUT LOGO BELOW ******************************** -->
+
+            <img id="logo_img" src="LOGO" alt="logo">
+
+            <div class="100">
+
+              <p class="info_text">
+                Joining is easy, we just need a few details.
+                <br><br>
+                Your first name or nickname is all we need here.
+                <br><br>
+                Once you've joined, you can order online and collect stamps with each purchase.
+              </p>
+
+            </div>
+
+            <div class="101">
+
+              <p class="info_text">
+                If you use a landline please include the prefix e.g. (06).
+                <br><br>
+                Only cell phone numbers can be used to order online.
+                <br><br>
+                Coffee Stamp identifies you using your unique phone number.
+              </p>
+
+            </div>
+
+            <div class="102">
+
+              <p class="info_text">
+                Email addresses can only be used twice.
+                <br><br>
+                Your email address is only available to the cafe you join. Learn more in our <a href="../policy/policy.html">Privacy Policy</a>.
+              </p>
+
+            </div>
+
+            <div class="103">
+
+              <p class="info_text">
+                To begin with this is the only cafe you can order from online if they offer it.
+                <br><br>
+                Later, you will automatically join other cafe's using Coffee Stamp when you visit them.
+              </p>
+
+            </div>
+
+            <div class="104">
+
+              <p class="info_text">
+                These are all of the locations available for the franchise you selected.
+                <br><br>
+                Please select the cafe location that you'll be ordering from.
+              </p>
+
+            </div>
+
+            <div class="105">
+
+              <p class="info_text">
+                This is used for COVID-19's guest regestation. Press 'Submit' to skip. 
+                <br><br>
+                By joining Coffee Stamp and submitting this information you agree to the use of your information according to our <a href="../policy/policy.html">Privacy Policy</a>.
+              </p>
+
+            </div>
+
+            <div class="106">
+
+              <!--THIS IS A DUD DIV TO LINE UP WITH EQUAL AMOUNT OF FORM DIVS. THIS PAGE DOES NOT DISPLAY BECAUSE IT IS LINED UP WITH THE SUCCESS PAGE-->
+
+            </div>
+
+          </div>
+
+          <div id="form_wrapper" class="col-md-8">
+
+            <form id="join_information_form">
+
+              <div class="0">
+
+                <h3>Please enter your name or nickname</h3>
+
+                <input id="name" type="text" name="name" placeholder="Enter Name">
+
+                <p class="error_message">Please fill in the feild above</p>
+
+              </div>
+
+              <div class="1">
+
+                <h3>Please enter your cell phone number</h3>
+
+                <input id="number" type="text" name="newcustomerphone" placeholder="Enter Phone Number" inputmode="numeric">
+
+                <p class="error_message">Please fill in the feild above</p>
+
+              </div>
+
+              <div class="2">
+
+                <h3>Please enter your email address</h3>
+
+                <input id="email" type="text" name="newcustomeremail" placeholder="Enter Email" inputmode="email">
+
+                <p class="error_message">Please fill in the feild above</p>
+
+              </div>
+
+              <div class="3">
+
+                <h3>Please select your local cafe</h3>
+
+                <select id="localcafe" name="networkcafes">
+                </select>
+
+                <p class="error_message">Please select from the dropdown</p>
+
+              </div>
+
+              <div class="4">
+
+                <h3>Please select cafe location</h3>
+
+                <select id="localcafelocation" name="newcustomerlocalcafelocation">
+                </select>
+
+                <p class="error_message">Please select from the dropdown</p>
+
+              </div>
+
+              <div class="5">
+
+                <h3>Please enter your address</h3>
+
+                <textarea id="address" rows="3" name="address" placeholder="Enter Address"></textarea>
+
+                <p class="error_message">Please fill in the feild above</p>
+
+              </div>
+
+              <div class="6">
+
+                <div id="success_wrapper">
+
+                  <img class="tick_cross_img" src="img/green_tick.png" alt="Success Tick">
+
+                  <h3 class="success_error_page_h3">Success!</h3>
+
+                  <h4 id="welcome" style="color: #2d2d2d;"></h4>
+
+                  <br>
+
+                  <p style="color: #2d2d2d;">No need to worry about losing your coffee card anymore. Collect stamps with every purchase online or in store and redeem when you’re ready.</p>
+
+                </div>
+
+                <div id="error_wrapper">
+
+                  <img class="tick_cross_img" src="img/red_cross.png" alt="Error Cross">
+
+                  <h3 class="success_error_page_h3">Something went wrong..</h3>
+
+                  <br>
+
+                  <h5 style="color: #2d2d2d;">It seems that your information did not submit. Please try again. If errors persist, please contact Coffeestamp support at <a href="mailto:admin@coffeestamp.nz?subject=FormError">admin@coffeestamp.nz</a>.</h5>
+
+                  <br>
+
+                  <a href="join.html"><button class="success_error_button" type="button">Try again</button></a>
+
+                </div>
+
+                <br>
+
+                <a href="../index.html"><button class="success_error_button" type="button">Home</button></a>
+
+              </div>
+
+            </form>
+
+            <div id="navigators" class="row">
+
+              <div class="col-5 col-md-4 col-lg-3">
+
+                <button id="back_button" type="button" name="back" onclick="back()">Back</button>
+
+              </div>
+
+              <div class="col-2 col-md-4 col-lg-6">
+
+              </div>
+
+              <div class="col-5 col-md-4 col-lg-3">
+
+                <button id="next_button" type="button" name="next" onclick="next()">Next</button>
+
+                <!--HIDDEN UNTIL USER ON LAST FORM INPUT PAGE.-->
+                <button id="submit_button" name="submit" type="button" onclick="submit()">Submit</button>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <script type="text/javascript">
+
+
+
+      //RESPONSIBLE FOR LOADING EXTERNAL HTML FILES. USING FOR MENU.
+      $("[data-load]").each(function(){
+
+          $(this).load($(this).data("load"), function(){
+          });
+
+      });
+
+
+      //SETTING UP AJAX FOR SELECT CAFE OPTIONS
+      var xhttpOnLoad = new XMLHttpRequest();
+      xhttpOnLoad.onreadystatechange = function() {
+
+        //IF WE HAVE RESPONSE FROM SERVER
+        if (this.readyState == 4 && this.status == 200) {
+
+          var cafeListCommaSeperated = this.responseText;
+          var cafeListSortedArray = cafeListCommaSeperated.split(',');
+
+          //CREATING DEFAULT OPTION AND APPENDING TO THE TOP OF THE SELECT LIST.
+          var select = document.getElementById("localcafe");
+          var option = document.createElement("option");
+          option.text = "Please select";
+          option.value = "Please select";
+          option.disabled = true;
+          option.selected = true;
+          select.add(option);
+
+          //RUNNING THROUGH ARRAY OF ALL CAFE AND ADDING OPTION FOR EACH CAFE WITHIN SELECT
+          for (var i = 0; i < cafeListSortedArray.length; i++) {
+
+            option = document.createElement("option");
+            option.text = cafeListSortedArray[i];
+            option.value = cafeListSortedArray[i];
+            select.add(option);
+
+          }
+
+        }
+
+      };
+
+      xhttpOnLoad.open("POST", '../../as3_edf56hc37n_68h_4rfggTR5HnJJK_mn112-Dev/index.cgi?getnetworks=false', true);
+      xhttpOnLoad.send();
+
+
+
+
+
+      //CHANGE LOGO ON RESIZE OR VIEWPORT WIDTH.
+      if (window.innerWidth < 768) {
+
+        document.getElementById('logo_img').src = "../img/logo2020.png";
+
+      }
+      else {
+
+        document.getElementById('logo_img').src = "../img/logo.png";
+
+      }
+
+      window.onresize = function(event) {
+
+        if (window.innerWidth < 768) {
+
+          document.getElementById('logo_img').src = "../img/logo2020.png";
+
+          //IF SUCCESS PAGE
+          if (formInputPageNum == 6) {
+
+            var successPage = document.getElementById('form_wrapper').style;
+            successPage.marginTop = "20px";
+            successPage.height = "auto";
+            successPage.padding = "40px 30px";
+            successPage.borderTopRightRadius = "18px";
+            successPage.borderTopLeftRadius = "18px";
+
+          }
+
+        }
+        else {
+
+          document.getElementById('logo_img').src = "../img/logo.png";
+
+          if (formInputPageNum == 6) {
+
+            var successPage = document.getElementById('form_wrapper').style;
+            successPage.marginTop = "auto";
+            successPage.height = "480px";
+            successPage.padding = "0px 30px";
+            successPage.borderTopRightRadius = "0px";
+            successPage.borderTopLeftRadius = "0px";
+
+          }
+
+        }
+
+      };
+
+
+
+      //EDITWHENDONE!!!!!!!!!!!! LINE 117 - 130: THIS SCRIPT RUNS ON PAGE LOAD. GIVES ALL INPUT FEILDS A (display: none;) EXCEPT THE FIRST INPUT FEILD.
+      var formInputPageNum = 0;
+      var formInfoPageNum = 100;
+
+      //THIS IS CALLING OUR NAME FEILD AND GIVING IT (display: block;).
+      var formInfoPage = document.getElementsByClassName(formInfoPageNum)[0];
+      formInfoPage.style.display = "block";
+      //THIS IS CALLING OUR NAME FEILD INFO TEXT AND GIVING IT (display: block;).
+      var formInputPage = document.getElementsByClassName(formInputPageNum)[0];
+      formInputPage.style.display = "block";
+
+      //GIVES ALL INPUT FEILDS THAT COME AFTER OUR NAME FEILD (display: none;).
+      formInputPageNum += 1;
+      formInfoPageNum += 1;
+      //LIMITED TO '6' BECAUSE THERE ARE ONLY 7 INPUT FEILDS. (0-6).
+      while (formInputPageNum <= 6) {
+
+        formInputPage = document.getElementsByClassName(formInputPageNum)[0];
+        formInputPage.style.display = "none";
+
+        formInputPageNum += 1;
+
+      }
+
+      while (formInfoPageNum <= 106) {
+
+        formInfoPage = document.getElementsByClassName(formInfoPageNum)[0];
+        formInfoPage.style.display = "none";
+
+        formInfoPageNum += 1;
+
+      }
+
+
+      //RESETS VAR TO 0. IS USED WITHIN FUNCTIONS 'next()' AND 'back()'. DETERMINES THE FORM INPUT PAGE THE USER IS ON.
+      formInputPageNum = 0;
+      formInfoPageNum = 100;
+      var skipCafeLocationPage = true;
+
+
+      //EVENT LISTNER IF ENTERKEY PRESSED. RUN 'next()' IF ENTER PRESSED.
+      document.addEventListener("keyup", function(event) {
+
+        if (event.keyCode === 13) {
+
+          event.preventDefault();
+
+          if (formInputPageNum <= 4) {
+
+            document.getElementById("next_button").click();
+
+          }
+          else {
+
+            var hasFocus = $('#address').is(':focus');
+
+            if (hasFocus) {
+            }
+            else {
+
+              document.getElementById("submit_button").click();
+
+            }
+
+          }
+
+        }
+
+      });
+
+
+
+
+      //FUNCTION EXECUTES WHEN NEXT BUTTON CLICKED. MAKES CURRENT FORM INPUT FADE OUT AND THE NEXT FORM INPUT FADE IN. CODE WITHIN IF STATEMENT IS WRITTEN IN JQUERY.
+      function next() {
+
+        formInputPage = document.getElementsByClassName(formInputPageNum)[0];
+        formInfoPage = document.getElementsByClassName(formInfoPageNum)[0];
+
+        //CHILD[1] IS THE FORM INPUT
+        var inputName = formInputPage.children[1].name;
+        var inputValue = formInputPage.children[1].value;
+        var tagName = formInputPage.children[1].tagName;
+        //CHILD[2] IS TH <p> ELEMENT
+        var errorMsg = formInputPage.children[2];
+        var buttonID = "next_button";
+
+        //ONLY EXECUTES IS INPUT IS NOT EMPTY
+        if (inputValue != "") {
+
+          if (inputValue != "Please select") {
+
+            //ONLY EXECUTES IF USER IS NOT ON LAST FORM INPUT PAGE.
+            if (formInputPageNum < 5) {
+
+              //ONLY EXECUTES IF NOT THE FIRST FORM INPUT PAGE (NAME) OR LAST FORM INPUT PAGE (ADDRESS)
+              if (formInputPageNum != 0 && formInputPageNum != 4) {
+
+                //SETTING UP AJAX FOR ERROR CHECKING
+                var xhttpErrorCheck = new XMLHttpRequest();
+                xhttpErrorCheck.onreadystatechange = function() {
+
+                  //IF WE HAVE RESPONSE FROM SERVER
+                  if (this.readyState == 4 && this.status == 200) {
+
+                    //SETTING ajaxResponse TO EQUAL SERVER RESPONSE
+                    var ajaxResponse = this.responseText;
+
+                    if (tagName == "INPUT") {
+
+                      if (ajaxResponse == "Success") {
+
+                        goToNextPage(skipCafeLocationPage, buttonID);
+
+                      }
+                      else {
+
+                        //MAKE ERROR MESSAGE VISIBLE IF USER HAS NOT PASSED VALIDATION IN INPUT FEILD
+                        errorMsg.innerHTML = ajaxResponse;
+                        errorMsg.style.visibility = "visible";
+
+                      }
+
+                    }
+                    if (tagName == "SELECT") {
+
+                      if (ajaxResponse == "NotFranchise") {
+
+                        goToNextPage(skipCafeLocationPage, buttonID);
+
+                      }
+                      else {
+
+                        //REMOVE ID FOR CAFE LOACTION PAGE
+                        formInputPageNum += 1;
+                        formInfoPageNum += 1;
+                        document.getElementsByClassName(formInputPageNum)[0].removeAttribute("id");
+                        document.getElementsByClassName(formInfoPageNum)[0].removeAttribute("id");
+                        formInputPageNum -= 1;
+                        formInfoPageNum -= 1;
+
+                        skipCafeLocationPage = false;
+                        goToNextPage(skipCafeLocationPage, buttonID);
+                        skipCafeLocationPage = true;
+
+                        var select = document.getElementById("localcafelocation");
+
+                        //RESET OPTION LIST.
+                        if (select.options.length != 0) {
+
+                          var i, l = select.options.length - 1;
+                          for(i = l; i >= 0; i--) {
+                             select.remove(i);
+                          }
+
+                        }
+
+                        var cafeListSortedArray = ajaxResponse.split(',');
+
+                        //CREATING DEFAULT OPTION AND APPENDING TO THE TOP OF THE SELECT LIST.
+                        var option = document.createElement("option");
+                        option.text = "Please select";
+                        option.value = "Please select";
+                        option.disabled = true;
+                        option.selected = true;
+                        select.add(option);
+
+                        //RUNNING THROUGH ARRAY OF ALL CAFE AND ADDING OPTION FOR EACH CAFE WITHIN SELECT
+                        for (var i = 0; i < cafeListSortedArray.length; i++) {
+
+                          option = document.createElement("option");
+                          option.text = cafeListSortedArray[i];
+                          option.value = cafeListSortedArray[i];
+                          select.add(option);
+
+                        }
+
+                      }
+
+                    }
+
+                  }
+
+                };
+
+                //ENCODING URL TO ENSURE NO WHITESPACE
+                var xMLURL = '../../as3_edf56hc37n_68h_4rfggTR5HnJJK_mn112-Dev/index.cgi?' + inputName + '=' + inputValue;
+                var xMLURLEncoded = encodeURI(xMLURL);
+
+                xhttpErrorCheck.open("POST", xMLURLEncoded, true);
+                xhttpErrorCheck.send();
+
+              }
+              else {
+
+                goToNextPage(skipCafeLocationPage, buttonID);
+
+              }
+
+            }
+
+          }
+          else {
+
+            errorMsg.style.visibility = "visible";
+
+          }
+
+        }
+        else {
+
+          //MAKE ERROR MESSAGE VISIBLE IF USER HAS NOT ENTERED ANYTHING IN INPUT FEILD
+          errorMsg.innerHTML = "Please fill in the feild above";
+          errorMsg.style.visibility = "visible";
+
+        }
+
+      }
+
+
+
+
+
+      function submit() {
+
+        var buttonID = "submit_button";
+        formInputPage = document.getElementsByClassName(formInputPageNum)[0];
+
+        //CHILD[1] IS THE FORM INPUT
+        var inputValue = formInputPage.children[1].value;
+        //CHILD[2] IS TH <p> ELEMENT
+        var errorMsg = formInputPage.children[2];
+
+        document.getElementById("welcome").innerHTML = "Welcome to Coffee Stamp " + document.getElementById("name").value + "!";
+
+        //ONLY EXECUTES IS INPUT IS NOT EMPTY
+
+        if (inputValue == "") {
+
+          formInputPage.children[1].value = "Enter Address";
+
+        }
+
+          //SETTING UP AJAX TO SUBMIT FORM
+          var xhttpSubmitForm = new XMLHttpRequest();
+          xhttpSubmitForm.onreadystatechange = function() {
+
+            //IF WE HAVE RESPONSE FROM SERVER
+            if (this.readyState == 4 && this.status == 200) {
+
+                var ajaxResponse = this.responseText;
+
+                if (ajaxResponse == "Success") {
+
+                  document.getElementById("error_wrapper").style.display = "none";
+                  document.getElementById("success_wrapper").style.display = "block";
+                  goToNextPage(skipCafeLocationPage, buttonID);
+
+                }
+                else {
+
+                  document.getElementById("error_wrapper").style.display = "block";
+                  document.getElementById("success_wrapper").style.display = "none";
+
+                }
+
+              }
+
+          };
+
+          formInputPageNum = 0;
+
+          var inputName = new Array;
+          var inputValue = new Array;
+
+          while (formInputPageNum <= 5) {
+
+            formInputPage = document.getElementsByClassName(formInputPageNum)[0];
+            inputName[formInputPageNum] = formInputPage.children[1].name;
+            inputValue[formInputPageNum] = formInputPage.children[1].value;
+
+            formInputPageNum += 1;
+
+          }
+
+          formInputPageNum = 5;
+
+          var queryString;
+          for (var i = 0; i < inputValue.length; i++) {
+
+            queryString += '&' + inputName[i] + '=' + inputValue[i];
+
+          }
+
+          var url = '../../as3_edf56hc37n_68h_4rfggTR5HnJJK_mn112-Dev/index.cgi?newcustomersave=true' + queryString;
+          var urlEncoded = encodeURI(url);
+
+          xhttpSubmitForm.open("POST", urlEncoded , true);
+          xhttpSubmitForm.send();
+
+
+
+      }
+
+
+
+
+
+
+      function goToNextPage(skipCafeLocationPage, buttonType) {
+
+        //DISABLING BUTTON FOR ONE SECOND AFTER CLICK TO PREVENT DOUBLE CLICK ERRORS
+        var nextButton = document.getElementById(buttonType);
+        nextButton.disabled = true;
+
+        if (buttonType != "submit_button") {
+
+          setTimeout(function(){ nextButton.disabled = false; }, 1000);
+
+          //HIDE ERROR MESSAGE WHEN USER MOVES TO NEXT FORM INPUT PAGE
+          document.getElementsByClassName(formInputPageNum)[0].children[2].style.visibility = "hidden";
+
+        }
+
+        //ASSIGNING CLASSNAME 'formInputPageNum' AND 'formInfoPageNum'(formInputPageNum/formInfoPageNum is a int which is the current form input/info page the user is on) TO VAR 'formInputPage'/'formInfoPageNum'.
+        formInputPage = $('.'+formInputPageNum).attr('class');
+        formInfoPage = $('.'+formInfoPageNum).attr('class');
+
+        //FADES OUT CURRENT FORM INFO PAGE USER IS ON. THE FUNCTION BELOW EXCECUTES AFTER THE PAGE HAS COMPLETLY FADED OUT.
+        $('.'+formInfoPage).fadeOut('slow', function () {
+
+          //SKIPS CAFE LOCATION PAGE IF NOT A LOCAL CAFE NOT A FRANCHISE.
+          if (formInputPageNum == 3 && skipCafeLocationPage == true) {
+
+            formInfoPageNum += 1;
+            document.getElementsByClassName(formInfoPageNum)[0].id = "skipped";
+
+          }
+
+          //FADE IN NEXT PAGE.
+          formInfoPageNum += 1;
+          formInfoPage = $('.'+formInfoPageNum).attr('class');
+          $('.'+formInfoPage).fadeIn('slow');
+
+        });
+
+        //FADES OUT CURRENT FORM INPUT PAGE USER IS ON. THE FUNCTION BELOW EXCECUTES AFTER THE PAGE HAS COMPLETLY FADED OUT.
+        $('.'+formInputPage).fadeOut('slow', function () {
+
+            //SKIPS CAFE LOCATION PAGE IF NOT A LOCAL CAFE NOT A FRANCHISE.
+            if (formInputPageNum == 3 && skipCafeLocationPage == true) {
+
+              formInputPageNum += 1;
+              document.getElementsByClassName(formInputPageNum)[0].id = "skipped";
+              document.getElementsByClassName(formInputPageNum)[0].children[1].value = null;
+
+            }
+
+            //DISPLAY SUMBIT BUTTON IF USER PROGRESSING TO LAST FORM INPUT PAGE.
+            if (formInputPageNum == 4) {
+
+              document.getElementById('next_button').style.display = "none";
+              document.getElementById('submit_button').style.display = "block";
+
+            }
+
+            //RE-STYLING TO SUIT THE REMOVAL OF INFO BOX
+            if (buttonType == "submit_button") {
+
+              document.getElementById('navigators').style.display = "none";
+              document.getElementById('info_wrapper').style.display = "none";
+              document.getElementById('form_wrapper').style.margin = "0 auto 0 auto";
+
+              if (window.innerWidth < 768) {
+
+                var successPage = document.getElementById('form_wrapper').style;
+                successPage.marginTop = "20px";
+                successPage.height = "auto";
+                successPage.padding = "40px 30px";
+                successPage.borderTopRightRadius = "18px";
+                successPage.borderTopLeftRadius = "18px";
+
+              }
+
+            }
+
+            //FADE IN NEXT PAGE.
+            formInputPageNum += 1;
+            formInputPage = $('.'+formInputPageNum).attr('class');
+            $('.'+formInputPage).fadeIn('slow');
+
+        });
+
+      }
+
+
+
+
+
+
+
+      //FUNCTION EXECUTES WHEN BACK BUTTON CLICKED. MAKES CURRENT FORM INPUT FADE OUT AND THE PREVIOUS FORM INPUT FADE IN. CODE WITHIN IF STATEMENT IS WRITTEN IN JQUERY.
+      function back() {
+
+        //ONLY EXECUTES IF USER IS NOT ON FIRST FORM INPUT PAGE.
+        if (formInputPageNum > 0) {
+
+          //DISABLING BUTTON FOR ONE SECOND AFTER CLICK TO PREVENT DOUBLE CLICK ERRORS
+          var backButton = document.getElementById('back_button');
+          backButton.disabled = true;
+          setTimeout(function(){ backButton.disabled = false; }, 1000);
+
+          //ASSIGNING CLASSNAME 'formInputPageNum' AND 'formInfoPageNum'(formInputPageNum/formInfoPageNum is a int which is the current form input/info page the user is on) TO VAR 'formInputPage'/'formInfoPageNum'.
+          formInputPage = $('.'+formInputPageNum).attr('class');
+          formInfoPage = $('.'+formInfoPageNum).attr('class');
+
+          //FADES OUT CURRENT FORM INFO PAGE USER IS ON. THE FUNCTION BELOW EXCECUTES AFTER THE PAGE HAS COMPLETLY FADED OUT.
+          $('.'+formInfoPage).fadeOut('slow', function () {
+
+            //SKIP CAFE LOCATION PAGE IF LOCAL CAFE NOT A FRANCHISE.
+            formInfoPageNum -= 1;
+            if (document.getElementsByClassName(formInfoPageNum)[0].id == "skipped") {
+
+              formInfoPageNum -= 1;
+
+            }
+
+            //FADE IN PREVIOUS PAGE.
+            formInfoPage = $('.'+formInfoPageNum).attr('class');
+            $('.'+formInfoPage).fadeIn('slow');
+
+          });
+
+          //FADES OUT CURRENT FORM INPUT PAGE USER IS ON. THE FUNCTION BELOW EXCECUTES AFTER THE PAGE HAS COMPLETLY FADED OUT.
+          $('.'+formInputPage).fadeOut('slow', function () {
+
+            //HIDE SUBMIT BUTTON IF USER GOING BACK FROM LAST FORM INPUT PAGE.
+              if (formInputPageNum == 5) {
+
+                backbutton = document.getElementById('submit_button');
+                backButton.disabled = true;
+                setTimeout(function(){ backButton.disabled = false; }, 1000);
+                backbutton.style.display = "none";
+                document.getElementById('next_button').style.display = "block";
+
+              }
+
+              //SKIP CAFE LOCATION PAGE IF LOCAL CAFE NOT A FRANCHISE.
+              formInputPageNum -= 1;
+              if (document.getElementsByClassName(formInputPageNum)[0].id == "skipped") {
+
+                formInputPageNum -= 1;
+
+              }
+
+              //FADE IN PREVIOUS PAGE.
+              formInputPage = $('.'+formInputPageNum).attr('class');
+              $('.'+formInputPage).fadeIn('slow');
+
+          });
+
+        }
+
+      }
+
+
+
+
+
+
+    </script>
+
+
+  </body>
+
+</html>
